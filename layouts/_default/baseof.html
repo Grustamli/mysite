@@ -7,9 +7,10 @@
     {{ end }}</title>
   </head>
   <body>
-    {{ block "main" . }}
+    {{ block "header" .}}
+        {{ partial "site-header.html" . }}
     {{ end }}
-    {{ block "footer" . }}
-    {{ end }}
+    {{ block "main" . }}{{ end }}
+    {{ block "footer" . }}{{ end }}
   </body>
 </html>
