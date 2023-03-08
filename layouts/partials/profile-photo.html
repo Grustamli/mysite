@@ -1,0 +1,5 @@
+{{ with resources.GetMatch .Site.Params.profilePhoto }}
+    {{ with .Fill "200x200 webp"}}
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+    {{ end }}
+{{ end }}
