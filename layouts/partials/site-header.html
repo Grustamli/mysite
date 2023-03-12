@@ -1,1 +1,15 @@
-<div class="header">Site header</div>
+<div class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                <h1>GRUSTAMLI.COM</h1>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            <a class="navbar-item {{if or ($currentPage.IsMenuCurrent " main" .) ($currentPage.HasMenuCurrent "main" .)}} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+            {{ end }}
+        </div>
+    </div>
+</div>

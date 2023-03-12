@@ -3,5 +3,12 @@ languageCode = 'en-us'
 title = 'Gadir Rustamli'
 
 [params]
-profilePhoto = "images/profile.jpg"
 githubURL = "https://github.com/Grustamli"
+profilePhoto = "images/profile.jpg"
+
+[menu]
+[[menu.main]]
+identifier = "main"
+name = "Home"
+title = "Homepage"
+url = "/"
