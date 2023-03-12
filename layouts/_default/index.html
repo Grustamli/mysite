@@ -1,5 +1,15 @@
+{{ define "extra_style" }}
+{{ $style := resources.Get "css/index.css" | resources.PostCSS | resources.Minify | resources.Fingerprint "sha512"}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+{{ end }}
+
 {{ define "main" }}
 {{/*
     {{ partial "profile-photo.html" . }}
 */}}
+<div class="hero">
+    <div class="container">
+
+    </div>
+</div>
 {{ end }}

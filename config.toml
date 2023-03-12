@@ -8,7 +8,14 @@ profilePhoto = "images/profile.jpg"
 
 [menu]
 [[menu.main]]
-identifier = "main"
+identifier = "home"
 name = "Home"
 title = "Homepage"
 url = "/"
+weight = -110
+
+[[menu.main]]
+identifier = "articles"
+name = "Articles"
+title = "Articles"
+url = "/articles/"
