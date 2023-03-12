@@ -1,1 +1,15 @@
-@import 'bulma/css/bulma.min.css'
+@import 'bulma/css/bulma.min.css';
+
+body {
+    font-size: 1.2rem;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Righteous', cursive;
+    font-size: 1.4rem;
+}
+
