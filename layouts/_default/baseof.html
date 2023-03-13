@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Righteous&display=swap" rel="stylesheet">
-  {{ $style := resources.Get "css/base.css" | resources.PostCSS | resources.Minify | resources.Fingerprint "sha512"}}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  {{ partialCached "css.html" .}}
   {{ block "extra_style" .}}{{ end }}
 </head>
 
